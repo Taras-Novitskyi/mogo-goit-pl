@@ -1,0 +1,85 @@
+.hero {
+  text-align: center;
+  max-width: 1900px;
+  padding: 230px 0;
+  margin: 0 auto;
+
+  background-image: linear-gradient(
+      rgba(243, 129, 129, 0.9) 0%,
+      rgba(252, 227, 138, 0.9) 100%
+    ),
+    url('../../images/hero/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__container {
+  }
+
+  &__suptitle {
+    margin-bottom: 30px;
+
+    font-family: $suptitleFont;
+    font-size: 32px;
+    line-height: 1.2;
+    color: $white-textColor;
+
+    @include tablet {
+      font-size: 48px;
+    }
+
+    @include desktop {
+      font-size: 72px;
+      line-height: 0.933;
+    }
+  }
+
+  &__title {
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    color: $white-textColor;
+
+    @include tablet {
+      font-size: 100px;
+    }
+
+    @include desktop {
+      font-size: 150px;
+      line-height: 0.933;
+    }
+  }
+
+  &__button {
+    margin-top: 115px;
+    background-color: transparent;
+  }
+
+  &__backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 20;
+    opacity: 1;
+
+    padding: 93px 15px;
+    overflow-y: scroll;
+
+    @include transition($property1: opacity);
+  }
+
+  &__backdrop.is-hidden {
+    // visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+}
