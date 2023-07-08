@@ -1,0 +1,191 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  background-color: transparent;
+
+  &__container {
+    @include flexCenter($main-axis: space-between);
+    height: 60px;
+  }
+
+  &__logo {
+    font-size: 30px;
+    color: $white-textColor;
+    font-weight: 700;
+    line-height: 1.2;
+
+    @include transition($property1: color);
+
+    &:hover,
+    &:focus {
+      color: $accent-color2;
+    }
+  }
+
+  &__button {
+    position: relative;
+    z-index: 3;
+    order: 3;
+
+    background-color: transparent;
+    color: $white-textColor;
+
+    @include transition($property1: color);
+
+    &:hover,
+    &:focus {
+      color: $accent-color2;
+    }
+
+    &.is-open .header__icon-close {
+      display: block;
+    }
+
+    &.is-open .header__icon-burger {
+      display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__icon-menu {
+    display: block;
+    fill: currentColor;
+  }
+
+  &__icon-burger {
+    display: block;
+  }
+
+  &__icon-close {
+    display: none;
+  }
+
+  &__navigation {
+    @media screen and (max-width: 767px) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      min-height: 100vh;
+
+      @include flexCenter($main-axis: start);
+      flex-direction: column;
+
+      padding-top: 100px;
+      background-color: $accent-color1;
+
+      opacity: 0;
+      pointer-events: none;
+      z-index: 2;
+
+      @include transition($property1: opacity);
+
+      &.is-open {
+        opacity: 1;
+        pointer-events: auto;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      flex-grow: 1;
+      margin-right: 55px;
+      margin-left: 55px;
+    }
+  }
+
+  &__list {
+    @media screen and (min-width: 768px) {
+      @include flexCenter($main-axis: end);
+
+      gap: 35px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      gap: 55px;
+    }
+  }
+
+  &__item {
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 33px;
+      }
+    }
+  }
+
+  &__link {
+    color: $white-textColor;
+    text-transform: uppercase;
+
+    @include transition($property1: color);
+
+    &:hover,
+    &:focus {
+      color: $accent-color2;
+    }
+
+    @media screen and (min-width: 768px) {
+      padding-bottom: 13px;
+    }
+  }
+
+  &__link--current {
+    position: relative;
+    color: $accent-color2;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+
+      background-color: $accent-color2;
+      border-radius: 1px;
+
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+  }
+
+  &__icons {
+    @include flexCenter($main-axis: end);
+    gap: 22px;
+    flex-grow: 1;
+    margin-right: 16px;
+
+    @media screen and (min-width: 768px) {
+      flex-grow: 0;
+      gap: 42px;
+    }
+  }
+
+  &__icon-link {
+    color: $white-textColor;
+
+    @include transition($property1: color);
+
+    &:hover,
+    &:focus {
+      color: $accent-color2;
+    }
+  }
+
+  &__icon {
+    display: block;
+    fill: currentColor;
+  }
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
