@@ -1,0 +1,51 @@
+
+@mixin mobile {
+  @media screen and (min-width: 320px) {
+    @content;
+  }
+}
+@mixin mobile-only {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin tablet-only {
+  @media screen and (min-width: 768px) and (max-width: 1199px){
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin retina {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @content;
+  }
+}
+
+@mixin flexCenter($type:flex, $main-axis:center, $cross-axis:center) {
+	display: $type;
+	justify-content: $main-axis;
+	align-items: $cross-axis;
+}
+
+
+@mixin transition($property1:all, $property2:null, $property3:null, $duration:250ms, $timing-function:cubic-bezier(0.4, 0, 0.2, 1), $delay:0ms) {
+	transition-property: $property1, $property2, $property3;
+	transition-duration: $duration;
+	transition-timing-function: $timing-function;
+	transition-delay: $delay;
+}
+

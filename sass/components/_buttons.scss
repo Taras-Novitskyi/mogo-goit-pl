@@ -1,0 +1,21 @@
+.main-button {
+  @include flexCenter($type: inline-flex);
+  min-width: 164px;
+  height: 44px;
+  background-color: $accent-color3;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: $white-textColor;
+
+  border: 3px solid $white-textColor;
+
+  @include transition($property1: all);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color1;
+  }
+}
