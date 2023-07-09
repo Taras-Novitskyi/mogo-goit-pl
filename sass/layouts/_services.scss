@@ -7,13 +7,13 @@
     display: grid;
     row-gap: 60px;
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(3, 1fr);
       column-gap: 48px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(2, 1fr);
       row-gap: 99px;
@@ -24,170 +24,5 @@
   &__item {
     display: flex;
     gap: 27px;
-  }
-
-  &__icon-container {
-    // @include flexCenter();
-  }
-
-  &__icon {
-  }
-
-  &__info {
-  }
-
-  &__info-title {
-    margin-bottom: 15px;
-
-    font-family: $mainFont;
-    font-size: 14px;
-    line-height: 1.2;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: $title-textColor;
-  }
-
-  &__info-subtitle {
-    font-size: 15px;
-    font-family: $secondaryFont;
-    line-height: 1.6;
-    letter-spacing: 0.01em;
-    color: $content-textColor;
-  }
-}
-
-.advantages {
-  // background-color: $bgColor-secondary;
-  padding-bottom: 60px;
-  padding-top: 0;
-
-  &__list {
-    display: grid;
-    grid-template-columns: auto;
-    gap: 32px;
-
-    @include tablet {
-      display: flex;
-      gap: 22px;
-    }
-
-    @include desktop {
-      gap: 80px;
-    }
-  }
-
-  &__item {
-    max-width: 230px;
-
-    @include tablet {
-      max-width: 180px;
-    }
-
-    @include desktop {
-      max-width: 317px;
-    }
-
-    &:nth-child(1):before {
-      content: '';
-      display: block;
-      height: 50px;
-      background-image: url('../images/advantages/advantages-1.png');
-      background-repeat: no-repeat;
-      background-position: left;
-      background-size: contain;
-      margin-bottom: 16px;
-
-      @include retina {
-        background-image: url('../images/advantages/advantages-1@2x.png');
-      }
-
-      @include tablet {
-        margin-bottom: 36px;
-      }
-      @include desktop {
-        margin-bottom: 40px;
-      }
-    }
-
-    &:nth-child(2):before {
-      content: '';
-      display: block;
-      height: 50px;
-      background-image: url('../images/advantages/advantages-2.png');
-      background-repeat: no-repeat;
-      background-position: left;
-      background-size: contain;
-      margin-bottom: 16px;
-
-      @include retina {
-        background-image: url('../images/advantages/advantages-2@2x.png');
-      }
-
-      @include tablet {
-        margin-bottom: 36px;
-      }
-      @include desktop {
-        margin-bottom: 40px;
-      }
-    }
-
-    &:nth-child(3):before {
-      content: '';
-      display: block;
-      height: 50px;
-      background-image: url('../images/advantages/advantages-3.png');
-      background-repeat: no-repeat;
-      background-position: left;
-      background-size: contain;
-      margin-bottom: 16px;
-
-      @include retina {
-        background-image: url('../images/advantages/advantages-3@2x.png');
-      }
-
-      @include tablet {
-        margin-bottom: 36px;
-      }
-      @include desktop {
-        margin-bottom: 40px;
-      }
-    }
-  }
-
-  &__info {
-    display: inline-block;
-    margin-bottom: 25px;
-
-    // color: $accent-mainColor;
-    // font-family: $titleFont;
-    font-size: 36px;
-    line-height: 1.14;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-
-    @include tablet {
-      font-size: 48px;
-    }
-
-    @include desktop {
-      font-size: 58px;
-    }
-  }
-
-  &__text {
-    // color: $secondary-textColor;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.7;
-
-    @include tablet {
-      font-size: 14px;
-      line-height: 1.74;
-    }
-
-    @include desktop {
-      font-size: 16px;
-      line-height: 1.76;
-    }
   }
 }
