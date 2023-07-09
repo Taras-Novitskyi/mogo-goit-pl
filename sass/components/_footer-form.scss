@@ -1,9 +1,6 @@
 .form-footer {
   @include flexCenter($main-axis: end);
 
-  &__label {
-  }
-
   &__input {
     padding: 13px;
     width: 234px;

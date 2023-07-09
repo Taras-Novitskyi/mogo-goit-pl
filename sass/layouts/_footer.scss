@@ -2,13 +2,13 @@
   @include flexCenter();
   height: 120px;
 
-  border-top: 1px solid #e5e5e5;
-
   @include tablet {
     height: 60px;
   }
 
   &__container {
+    border-top: 1px solid #e5e5e5;
+
     @include mobile-only {
       @include flexCenter();
       flex-direction: column-reverse;
