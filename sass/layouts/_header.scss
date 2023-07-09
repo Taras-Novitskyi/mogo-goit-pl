@@ -127,13 +127,17 @@
 
     @include transition($property1: color);
 
-    &:hover,
-    &:focus {
-      color: $accent-color2;
+    @include mobile-only {
+      font-size: 32px;
     }
 
     @include tablet {
       padding-bottom: 13px;
+    }
+
+    &:hover,
+    &:focus {
+      color: $accent-color2;
     }
   }
 
@@ -186,8 +190,4 @@
     display: block;
     fill: currentColor;
   }
-}
-
-body.no-scroll {
-  overflow: hidden;
 }

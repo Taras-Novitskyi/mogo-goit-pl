@@ -521,13 +521,18 @@ body {
   -webkit-transition-delay: 0ms;
           transition-delay: 0ms;
 }
-.header__link:hover, .header__link:focus {
-  color: #fce38a;
+@media screen and (max-width: 853px) {
+  .header__link {
+    font-size: 32px;
+  }
 }
 @media screen and (min-width: 854px) {
   .header__link {
     padding-bottom: 13px;
   }
+}
+.header__link:hover, .header__link:focus {
+  color: #fce38a;
 }
 .header__link--current {
   position: relative;
@@ -590,10 +595,6 @@ body {
 .header__icon {
   display: block;
   fill: currentColor;
-}
-
-body.no-scroll {
-  overflow: hidden;
 }
 
 .hero {
