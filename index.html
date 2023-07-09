@@ -190,8 +190,8 @@
                   </svg>
                 </div>
                 <div class="services__info">
-                  <h3 class="services__info-title title-h3">Photography</h3>
-                  <p class="services__info-subtitle">
+                  <h3 class="title-h3">Photography</h3>
+                  <p class="subtitle-h3">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor.
                   </p>
@@ -204,8 +204,8 @@
                   </svg>
                 </div>
                 <div class="services__info">
-                  <h3 class="services__info-title title-h3">Web Design</h3>
-                  <p class="services__info-subtitle">
+                  <h3 class="title-h3">Web Design</h3>
+                  <p class="subtitle-h3">
                     Ipsum dolor sit amet, consectetur adipiscing elit, sed do
                     eiusmod tempor.
                   </p>
@@ -218,8 +218,8 @@
                   </svg>
                 </div>
                 <div class="services__info">
-                  <h3 class="services__info-title title-h3">Creativity</h3>
-                  <p class="services__info-subtitle">
+                  <h3 class="title-h3">Creativity</h3>
+                  <p class="subtitle-h3">
                     Dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor.
                   </p>
@@ -232,8 +232,8 @@
                   </svg>
                 </div>
                 <div class="services__info">
-                  <h3 class="services__info-title title-h3">SEO</h3>
-                  <p class="services__info-subtitle">
+                  <h3 class="title-h3">SEO</h3>
+                  <p class="subtitle-h3">
                     Ipsum dolor sit amet, consectetur adipiscing elit, sed do
                     eiusmod.
                   </p>
@@ -246,8 +246,8 @@
                   </svg>
                 </div>
                 <div class="services__info">
-                  <h3 class="services__info-title title-h3">Css/Html</h3>
-                  <p class="services__info-subtitle">
+                  <h3 class="title-h3">Css/Html</h3>
+                  <p class="subtitle-h3">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do tempor.
                   </p>
@@ -260,8 +260,8 @@
                   </svg>
                 </div>
                 <div class="services__info">
-                  <h3 class="services__info-title title-h3">Digital</h3>
-                  <p class="services__info-subtitle">
+                  <h3 class="title-h3">Digital</h3>
+                  <p class="subtitle-h3">
                     Sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor.
                   </p>
@@ -272,11 +272,10 @@
         </section>
 
         <section class="section team">
-          <div class="team__container container">
+          <div class="container">
             <p class="team__suptitle suptitle">Who we are</p>
             <h2 class="team__title title">Meet our team</h2>
-            <!-- add ul classname "your-element" and use slider in this project -->
-            <p class="team__info">
+            <p class="team__subtitle">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -284,192 +283,242 @@
             </p>
             <ul class="team__list">
               <li class="team__item">
-                <div class="team__img-container">
-                  <img
-                    class="team__card-img"
-                    srcset="
-                      ./images/team/matthew-dix.jpg    1x,
-                      ./images/team/matthew-dix-2x.jpg 2x
-                    "
-                    src="./images/team/matthew-dix.jpg"
-                    alt="photo Matthew Dix"
-                    sizes="380px"
-                  />
-                  <div class="team__social">
-                    <ul class="social">
-                      <li class="social__item">
-                        <a
-                          href="https://www.facebook.com/"
-                          class="social__link"
-                        >
-                          <svg class="social__icon" width="32" height="32">
-                            <use href="./images/sprite.svg#icon-facebook"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a href="https://twitter.com/" class="social__link">
-                          <svg class="social__icon" width="32" height="32">
-                            <use href="./images/sprite.svg#icon-twitter"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a
-                          href="https://www.pinterest.com/"
-                          class="social__link"
-                        >
-                          <svg class="social__icon" width="32" height="32">
-                            <use
-                              href="./images/sprite.svg#icon-pinterest"
-                            ></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a
-                          href="https://www.instagram.com/"
-                          class="social__link"
-                        >
-                          <svg class="social__icon" width="32" height="32">
-                            <use
-                              href="./images/sprite.svg#icon-instagram"
-                            ></use>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
+                <div class="team__photo">
+                  <div class="team__img-container">
+                    <img
+                      class="team__img"
+                      srcset="
+                        ./images/team/matthew-dix.jpg    1x,
+                        ./images/team/matthew-dix-2x.jpg 2x
+                      "
+                      src="./images/team/matthew-dix.jpg"
+                      alt="photo Matthew Dix"
+                      sizes="380px"
+                    />
+                    <div class="team__social">
+                      <ul class="social">
+                        <li class="social__item">
+                          <a
+                            href="https://www.facebook.com/"
+                            class="social__link"
+                            target="_blank"
+                            rel="noopener"
+                          >
+                            <svg class="social__icon" width="32" height="32">
+                              <use
+                                href="./images/sprite.svg#icon-facebook"
+                              ></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a
+                            href="https://twitter.com/"
+                            class="social__link"
+                            target="_blank"
+                            rel="noopener"
+                          >
+                            <svg class="social__icon" width="32" height="32">
+                              <use
+                                href="./images/sprite.svg#icon-twitter"
+                              ></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a
+                            href="https://www.pinterest.com/"
+                            class="social__link"
+                            target="_blank"
+                            rel="noopener"
+                          >
+                            <svg class="social__icon" width="32" height="32">
+                              <use
+                                href="./images/sprite.svg#icon-pinterest"
+                              ></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a
+                            href="https://www.instagram.com/"
+                            class="social__link"
+                            target="_blank"
+                            rel="noopener"
+                          >
+                            <svg class="social__icon" width="32" height="32">
+                              <use
+                                href="./images/sprite.svg#icon-instagram"
+                              ></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-                <div class="team__card-info">
-                  <p class="team__card-title">Matthew Dix</p>
-                  <p class="team__card-subtitle">Graphic Design</p>
+                <div class="team__data">
+                  <p class="team__name title-h3">Matthew Dix</p>
+                  <p class="team__position subtitle-h3">Graphic Design</p>
                 </div>
               </li>
               <li class="team__item">
-                <div class="team__img-container">
-                  <img
-                    class="team__card-img"
-                    srcset="
-                      ./images/team/christopher-campbell.jpg    1x,
-                      ./images/team/christopher-campbell-2x.jpg 2x
-                    "
-                    src="./images/team/christopher-campbell.jpg"
-                    alt="photo Christopher Campbell"
-                    sizes="380px"
-                  />
-                  <div class="team__social">
-                    <ul class="social">
-                      <li class="social__item">
-                        <a
-                          href="https://www.facebook.com/"
-                          class="social__link"
-                        >
-                          <svg class="social__icon" width="32" height="32">
-                            <use href="./images/sprite.svg#icon-facebook"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a href="https://twitter.com/" class="social__link">
-                          <svg class="social__icon" width="32" height="32">
-                            <use href="./images/sprite.svg#icon-twitter"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a
-                          href="https://www.pinterest.com/"
-                          class="social__link"
-                        >
-                          <svg class="social__icon" width="32" height="32">
-                            <use
-                              href="./images/sprite.svg#icon-pinterest"
-                            ></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a
-                          href="https://www.instagram.com/"
-                          class="social__link"
-                        >
-                          <svg class="social__icon" width="32" height="32">
-                            <use
-                              href="./images/sprite.svg#icon-instagram"
-                            ></use>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
+                <div class="team__photo">
+                  <div class="team__img-container">
+                    <img
+                      class="team__img"
+                      srcset="
+                        ./images/team/christopher-campbell.jpg    1x,
+                        ./images/team/christopher-campbell-2x.jpg 2x
+                      "
+                      src="./images/team/christopher-campbell.jpg"
+                      alt="photo Christopher Campbell"
+                      sizes="380px"
+                    />
+                    <div class="team__social">
+                      <ul class="social">
+                        <li class="social__item">
+                          <a
+                            href="https://www.facebook.com/"
+                            class="social__link"
+                            target="_blank"
+                            rel="noopener"
+                          >
+                            <svg class="social__icon" width="32" height="32">
+                              <use
+                                href="./images/sprite.svg#icon-facebook"
+                              ></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a
+                            href="https://twitter.com/"
+                            class="social__link"
+                            target="_blank"
+                            rel="noopener"
+                          >
+                            <svg class="social__icon" width="32" height="32">
+                              <use
+                                href="./images/sprite.svg#icon-twitter"
+                              ></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a
+                            href="https://www.pinterest.com/"
+                            class="social__link"
+                            target="_blank"
+                          >
+                            <svg class="social__icon" width="32" height="32">
+                              <use
+                                href="./images/sprite.svg#icon-pinterest"
+                              ></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a
+                            href="https://www.instagram.com/"
+                            class="social__link"
+                            target="_blank"
+                            rel="noopener"
+                          >
+                            <svg class="social__icon" width="32" height="32">
+                              <use
+                                href="./images/sprite.svg#icon-instagram"
+                              ></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-                <div class="team__card-info">
-                  <p class="team__card-title">Christopher Campbell</p>
-                  <p class="team__card-subtitle">Branding/UX design</p>
+                <div class="team__data">
+                  <p class="team__name title-h3">Christopher Campbell</p>
+                  <p class="team__position subtitle-h3">Branding/UX design</p>
                 </div>
               </li>
               <li class="team__item">
-                <div class="team__img-container">
-                  <img
-                    class="team__card-img"
-                    srcset="
-                      ./images/team/michael-fertig.jpg    1x,
-                      ./images/team/michael-fertig-2x.jpg 2x
-                    "
-                    src="./images/team/michael-fertig.jpg"
-                    alt="photo Michael Fertig"
-                    sizes="380px"
-                  />
-                  <div class="team__social">
-                    <ul class="social">
-                      <li class="social__item">
-                        <a
-                          href="https://www.facebook.com/"
-                          class="social__link"
-                        >
-                          <svg class="social__icon" width="32" height="32">
-                            <use href="./images/sprite.svg#icon-facebook"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a href="https://twitter.com/" class="social__link">
-                          <svg class="social__icon" width="32" height="32">
-                            <use href="./images/sprite.svg#icon-twitter"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a
-                          href="https://www.pinterest.com/"
-                          class="social__link"
-                        >
-                          <svg class="social__icon" width="32" height="32">
-                            <use
-                              href="./images/sprite.svg#icon-pinterest"
-                            ></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a
-                          href="https://www.instagram.com/"
-                          class="social__link"
-                        >
-                          <svg class="social__icon" width="32" height="32">
-                            <use
-                              href="./images/sprite.svg#icon-instagram"
-                            ></use>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
+                <div class="team__photo">
+                  <div class="team__img-container">
+                    <img
+                      class="team__img"
+                      srcset="
+                        ./images/team/michael-fertig.jpg    1x,
+                        ./images/team/michael-fertig-2x.jpg 2x
+                      "
+                      src="./images/team/michael-fertig.jpg"
+                      alt="photo Michael Fertig"
+                      sizes="380px"
+                    />
+                    <div class="team__social">
+                      <ul class="social">
+                        <li class="social__item">
+                          <a
+                            href="https://www.facebook.com/"
+                            class="social__link"
+                            target="_blank"
+                            rel="noopener"
+                          >
+                            <svg class="social__icon" width="32" height="32">
+                              <use
+                                href="./images/sprite.svg#icon-facebook"
+                              ></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a
+                            href="https://twitter.com/"
+                            class="social__link"
+                            target="_blank"
+                            rel="noopener"
+                          >
+                            <svg class="social__icon" width="32" height="32">
+                              <use
+                                href="./images/sprite.svg#icon-twitter"
+                              ></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a
+                            href="https://www.pinterest.com/"
+                            class="social__link"
+                            target="_blank"
+                            rel="noopener"
+                          >
+                            <svg class="social__icon" width="32" height="32">
+                              <use
+                                href="./images/sprite.svg#icon-pinterest"
+                              ></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social__item">
+                          <a
+                            href="https://www.instagram.com/"
+                            class="social__link"
+                            target="_blank"
+                            rel="noopener"
+                          >
+                            <svg class="social__icon" width="32" height="32">
+                              <use
+                                href="./images/sprite.svg#icon-instagram"
+                              ></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-                <div class="team__card-info">
-                  <p class="team__card-title">Michael Fertig</p>
-                  <p class="team__card-subtitle">Developer</p>
+                <div class="team__data">
+                  <p class="team__name title-h3">Michael Fertig</p>
+                  <p class="team__position subtitle-h3">Developer</p>
                 </div>
               </li>
             </ul>
@@ -479,22 +528,26 @@
 
       <footer class="footer">
         <div class="footer__container container">
-          <div class="footer__wrap-rights">
-            <p class="footer__rights">
-              © 2016 MoGo free PSD template by
-              <a class="footer__link" href="">Laaqiq</a>
-            </p>
-          </div>
-          <form class="footer__form form-footer">
-            <label class="form-footer__field">
-              <input
-                type="email"
-                class="form-footer__input"
-                name="email"
-                placeholder="Your Email"
-                required
-              />
-            </label>
+          <p class="footer__rights">
+            © 2016 MoGo free PSD template by
+            <a
+              class="footer__link"
+              href="https://laaqiq.gumroad.com/"
+              target="_blank"
+              rel="noopener"
+              >Laaqiq</a
+            >
+          </p>
+          <form class="form-footer">
+            <label class="form-footer__label" for="email"></label>
+            <input
+              type="email"
+              class="form-footer__input"
+              name="email"
+              id="email"
+              placeholder="Your Email"
+              required
+            />
             <button class="form-footer__buttom main-button" type="submit">
               Subscribe
             </button>

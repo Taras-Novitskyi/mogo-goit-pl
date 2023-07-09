@@ -4,10 +4,11 @@
   padding-left: 16px;
   padding-right: 16px;
 
-  @media screen and (min-width: $tablet) and (max-width: 1199.98px) {
+  @media screen and (min-width: $tablet) {
     padding-left: 32px;
     padding-right: 32px;
   }
+
   @media screen and (min-width: $mobile) {
     width: $mobile;
   }
