@@ -100,12 +100,12 @@ body {
 }
 
 .wrapper {
+  position: relative;
   display: grid;
   grid-template-rows: 1fr auto;
   grid-template-columns: 1fr;
   width: 100%;
   min-height: 100vh;
-  overflow: hidden;
 }
 
 .container {
@@ -122,17 +122,17 @@ body {
 }
 @media screen and (min-width: 412px) {
   .container {
-    width: 412px;
+    width: 394px;
   }
 }
 @media screen and (min-width: 854px) {
   .container {
-    width: 854px;
+    width: 836px;
   }
 }
 @media screen and (min-width: 1264px) {
   .container {
-    width: 1264px;
+    width: 1246px;
   }
 }
 
@@ -356,6 +356,16 @@ body {
   top: 0;
   left: 0;
   right: 0;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: transparent;
 }
 .header__container {
@@ -368,7 +378,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 60px;
 }
 .header__logo {
   font-size: 30px;

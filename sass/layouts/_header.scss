@@ -3,12 +3,14 @@
   top: 0;
   left: 0;
   right: 0;
+  height: 60px;
+
+  @include flexCenter();
 
   background-color: transparent;
 
   &__container {
     @include flexCenter($main-axis: space-between);
-    height: 60px;
   }
 
   &__logo {

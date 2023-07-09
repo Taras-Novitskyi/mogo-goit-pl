@@ -10,14 +10,14 @@
   }
 
   @media screen and (min-width: $mobile) {
-    width: $mobile;
+    width: 394px;
   }
 
   @media screen and (min-width: $tablet) {
-    width: $tablet;
+    width: 836px;
   }
 
   @media screen and (min-width: $desktop) {
-    width: $desktop;
+    width: 1246px;
   }
 }
