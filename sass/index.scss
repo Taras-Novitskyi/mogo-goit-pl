@@ -3,11 +3,11 @@
 @import './utils/mixin';
 @import './utils/visually-hidden';
 
-@import './base/body';
 @import './base/reset';
+@import './base/body';
+@import './base/wrapper';
 @import './base/container';
 @import './base/section';
-@import './base/wraper';
 
 @import './components/titles';
 @import './components/buttons';

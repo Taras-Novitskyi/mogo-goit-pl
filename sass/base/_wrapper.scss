@@ -1,8 +1,10 @@
-.wraper {
-  width: 100%;
-  min-height: 100vh;
-  overflow: hidden;
+.wrapper {
   display: grid;
   grid-template-rows: 1fr auto;
   grid-template-columns: 1fr;
+
+  width: 100%;
+  min-height: 100vh;
+
+  overflow: hidden;
 }
