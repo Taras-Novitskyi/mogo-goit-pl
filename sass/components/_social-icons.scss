@@ -1,0 +1,30 @@
+
+.social {
+  @include flexCenter();
+  background-color: $accent-color2;
+
+  &__item {
+    &:not(:last-child) {
+      border-right: 1px solid $accent-color1;
+    }
+  }
+
+  &__link {
+    @include flexCenter();
+    width: 56px;
+    height: 56px;
+    color: $accent-color1;
+
+    @include transition();
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color1;
+      color: $white-textColor;
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}
