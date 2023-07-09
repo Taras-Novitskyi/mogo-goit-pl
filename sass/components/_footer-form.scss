@@ -1,0 +1,36 @@
+.form-footer {
+  @include flexCenter($main-axis: end);
+
+  &__label {
+  }
+
+  &__input {
+    padding: 13px;
+    width: 234px;
+    height: 44px;
+    border: 1px solid #e7e7e7;
+    outline: none;
+
+    @include transition($property1: border);
+
+    &:focus {
+      border: 1px solid $accent-color2;
+    }
+
+    &::placeholder {
+      font-size: 15px;
+      font-family: $secondaryFont;
+      color: #cccccc;
+      font-style: italic;
+      line-height: 1.6;
+    }
+  }
+
+  &__buttom {
+    border: none;
+
+    &:hover {
+      background-color: $accent-color2;
+    }
+  }
+}
