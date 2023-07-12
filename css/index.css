@@ -385,6 +385,11 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 411px) {
+  .header__container {
+    width: 100%;
+  }
+}
 .header__logo {
   font-size: 30px;
   color: #ffffff;
@@ -575,6 +580,7 @@ body {
       -ms-flex-positive: 1;
           flex-grow: 1;
   margin-right: 16px;
+  margin-left: 16px;
 }
 @media screen and (min-width: 854px) {
   .header__icons {
